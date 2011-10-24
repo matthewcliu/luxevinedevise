@@ -26,14 +26,24 @@ body {
 	position: absolute;
 	top:120px;
 }
+.centered {
+	text-align:center !important;
+	padding: 0 !important;
+}
+.centered ul {
+	margin: 0 !important;
+}
+.centered .form-stacked {
+	padding: 0 !important;
+}
 
 #content {
 	z-index: 50;
 	opacity: 0.9;
 	filter: alpha(opacity=90);
-	background: #FFF url('/images/stamp.png') no-repeat 590px 10px;
+	background: #FFF url('/images/luxevine-logo.jpg') no-repeat 0px 0px;
 	margin-bottom: 80px;
-	padding: 80px 0;
+	padding: 140px 0 80px 0;
 }
 
 #content h1,
