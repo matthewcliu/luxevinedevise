@@ -1,13 +1,18 @@
 Verticalecommerce::Application.routes.draw do
   get "pages/landing"
-
   get "pages/confirmation"
-
   get "pages/about"
-
   get "pages/faq"
-
   get "pages/contact"
+
+  root :to => 'pages#landing'
+
+  resources :users
+  
+  match 'contact' => 'pages#contact'
+  match 'faq' => 'pages#faq'
+  match 'about' => 'pages#about'
+  match 'confirmation' => 'pages#confirmation'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
