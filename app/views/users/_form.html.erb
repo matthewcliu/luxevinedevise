@@ -1,6 +1,6 @@
 <%= form_for(@user, :html => { :class => "form-stacked signup"} ) do |f| %>
   <% if @user.errors.any? %>
-    <div id="error_explanation">
+    <div class="alert-message error">
       <h2>
       <% @user.errors.full_messages.each do |msg| %>
         <%= msg %>
