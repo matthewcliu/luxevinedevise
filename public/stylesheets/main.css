@@ -36,6 +36,9 @@ body {
 .centered .form-stacked {
 	padding: 0 !important;
 }
+.centered .form-stacked .actions {
+	margin-left: 0 !important;
+}
 
 #content {
 	z-index: 50;
