@@ -7,7 +7,7 @@ Verticalecommerce::Application.routes.draw do
 
   root :to => 'pages#landing'
 
-  resources :users
+  resources :users, :only => [:create]
   
   match 'contact' => 'pages#contact'
   match 'faq' => 'pages#faq'
